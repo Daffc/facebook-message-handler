@@ -75,6 +75,7 @@ function handleMessage(sender_psid, received_message) {
     }
   } else if (received_message.attachments) {
     // Get the URL of the message attachment
+    console.log(received_message.attachments[0]);
     let attachment_url = received_message.attachments[0].payload.url;
     response = {
       "attachment": {
