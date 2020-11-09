@@ -4,6 +4,8 @@ import request from 'request';
 let postWebHook = (req, res) => {
   let body = req.body;
 
+  console.log("hooked!!!");
+
   // Checks this is an event from a page subscription
   if (body.object === 'page') {
 
